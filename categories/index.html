@@ -45,7 +45,7 @@
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: './public/search.xml',
+    path: './public/public/search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
@@ -521,24 +521,27 @@
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
-<script>
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID: 'db62d481d93b5b74cb41',
-      clientSecret: 'f2209b195225d9acabcabd310e8f514beb53b7ae',
-      repo: 'liyinchao.github.io',
-      owner: 'liyinchao',
-      admin: ['liyinchao'],
-      id: 'a676607444a8bc8b150c9a3aff884e61',
-        language: window.navigator.language || window.navigator.userLanguage,
-      
-      distractionFreeMode: 'true'
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-</script>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: 'liyinchao.github.io',
+          owner: '',
+          admin: ,
+          id: ,
+          labels: ,
+          perPage: ,
+          pagerDirection: '',
+          createIssueManually: ,
+          distractionFreeMode: 
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 </body>
 </html>
