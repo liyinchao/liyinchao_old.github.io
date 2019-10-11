@@ -528,7 +528,7 @@
           repo: 'liyinchao.github.io',
           owner: 'liyinchao',
           admin: ['liyinchao'],
-          id: location.pathname,
+          id: md5(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')           
